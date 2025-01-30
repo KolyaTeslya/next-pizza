@@ -7,12 +7,12 @@ import { Title } from './title';
 import { cn } from '@/lib/utils';
 import { ProductCard } from './product-card';
 // import { useCategoryStore } from '@/shared/store';
-import { useCategoryStore } from '../../../ store';
-import { ProductWithRelations } from '@/@types/prisma';
+import { useCategoryStore } from '../../../store/category';
+// import { ProductWithRelations } from '@/@types/prisma';
 
 interface Props {
   title: string;
-  items: ProductWithRelations[];
+  items: any[];
   categoryId: number;
   className?: string;
   listClassName?: string;
